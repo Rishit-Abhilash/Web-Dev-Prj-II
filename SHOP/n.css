@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body{
+    /* background-color: #040404; */
+    background-color: #131925;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@font-face {
+    font-family: 'VT323';
+    src: url('https://fonts.google.com/specimen/VT323');
+}
+
+:root{
+    font-size:18px;
+    font-family: 'VT323';
+}
+.pixel{
+    background:url(a.gif);
+    background-repeat:repeat;
+    border-radius:10px;
+    /* box-shadow: 0 10px 10px -5px rgba(7, 251, 255, 0.647); */
+    -webkit-box-reflect: below 0.05px linear-gradient(transparent 90%,#0009);
+    height:380px;
+    justify-content: center;
+    display:flex;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  .glass{
+    display: flex;
+    position:fixed;
+    z-index:100000000000000000000;
+    margin:auto;
+    width:98.7%;
+    height:45px;
+    background:rgba(255,255,255,.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.651);
+    border-radius:15px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-right:2px solid rgba(255,255,255,.2);
+    border-bottom:2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(10px);
+  }
+
+  /*---------- FOR THE HEALTH AND EXP----------- */
+  .stats{
+    position: absolute;
+    left:90%;
+    transform: translateX(-50%);
+    background:url(heart.png);
+    background-size: contain; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border: none; 
+    cursor: pointer;
+    width:4%;
+    height:100%;
+
+    padding: 16px 14px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: color 0.4s ease,background-color 0.3s ease,box-shadow 0.3s ease;
+    
+  }
+
+  .stats:hover{
+    background-color:rgba(115, 149, 234, 0.528);
+    backdrop-filter:blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.685);
+  }
+
+
+
+
+
+
+
+  .logo{
+    /* font-family: helvetica; */
+    color: #fff;
+    font-size: 32px;
+    display: block;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    margin: 0 10px 0 10px;
+    /* transition: color 0.3s ease; */
+  }
+  .logo:hover{
+    /* color: rgb(252, 79, 125); */
+  }
+
+  .nav-item{
+    text-decoration: none;
+    position: relative;
+    /* min-width: 128px; */
+    padding: 13px;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    margin: 0 10px 0 10px;
+}
+
+  li {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px; 
+    border-radius: 15px;
+    text-decoration: none;
+  }
+  
+  li a {
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    border-radius: 15px;
+    text-decoration: none;
+    transition: color 0.4s ease,background-color 0.3s ease,box-shadow 0.3s ease;
+  }
+  
+  li a:hover {
+    color: rgba(252, 8, 73, 0.962);
+    background-color:rgba(115, 149, 234, 0.528);
+    backdrop-filter:blur(10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .g2{
+    
+    letter-spacing: 2px;
+    position: absolute;
+    display: block;
+    justify-content: center;
+    margin-top: 6%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    width:32%;
+    height:30%;
+    background:rgba(255,255,255,.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.651);
+    border-radius:15px;
+    border: 2px solid rgba(255,255,255,.5);
+    border-right:2px solid rgba(255,255,255,.2);
+    border-bottom:2px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(10px);
+  }
+
+  .gif {
+    position: relative;
+    background-image: url('coin.gif');
+    background-repeat:repeat;
+    background-size: contain; 
+    width: 100px; 
+    height: 100px; 
+    bottom: 62%;
+    left: 36%;
+    
+} 
+
+.line{
+  border:none;
+  flex:1;
+  height: 2px; 
+  background-color: rgba(255, 222, 5, 0.939);
+  margin: 0 10px;
+}
+  
+ .menue{
+    justify-content: center;
+    position:relative;
+    z-index: 100;
+    margin:0 auto;
+    margin-top: 10%;
+    width: 85%;
+    height: 1200px;
+    background:rgba(255,255,255,.1);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.651);
+    border-radius:15px; 
+    /* border: 2px solid rgba(255,255,255,.5);
+    border-right:2px solid rgba(255,255,255,.2);
+    border-bottom:2px solid rgba(255,255,255,.2); */
+    backdrop-filter: blur(10px);
+ }
+
+
+/* ----------------PANNEL 1------------------ */
+ .item-type{
+  position: relative;
+  z-index: 101;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color:#fff;
+  letter-spacing: 2px;
+  text-align: center;
+ }
+ .shop-pannel-1{
+  z-index: 101;
+  position: absolute;
+  width:1200px;
+  height:250px;
+  background: url(b.gif);
+  background-size: contain;
+  background-repeat: repeat;
+  margin: 5px auto 30px;
+  border-radius: 15px;
+  left: 50%; 
+  transform: translateX(-50%);
+ }
+
+.shop-items{
+  position: relative;
+  text-align: center;
+  z-index: 102;
+  width: 15%;
+  height:80%;
+  display: inline-block;
+  border-radius: 15px;
+  margin:15px 10px 80px 80px;
+  align-content: center;
+  background-color: #131925;
+  box-shadow: 0 0 10px 5px rgba(255, 221, 0, 0.743);
+ }
+
+/* -------------------PANNEL 2------------------------- */
+
+.item-type2{
+  z-index: 101;
+  position: relative;
+  font-size: 50px;
+  margin-top:300px;
+  margin-bottom: 10px;
+  color:#fff;
+  letter-spacing: 2px;
+  text-align: center;
+ }
+
+ .shop-pannel-2{
+  z-index: 101;
+  position: absolute;
+  width:1200px;
+  height:250px;
+  background: url(p.gif);
+  background-size: contain;
+  background-repeat: repeat;
+  margin: 5px auto 30px;
+  border-radius: 15px;
+  left: 50%; 
+  transform: translateX(-50%);
+ }
+
+
+ /* -------------------PANNEL 3------------------------- */
+
+ .item-type3{
+  justify-content: center;
+  position: relative;
+  font-size: 50px;
+  margin-top:300px;
+  margin-bottom: 10px;
+  color:#fff;
+  letter-spacing: 2px;
+  text-align: center;
+ }
+
+ .shop-pannel-3{
+  position: absolute;
+  width:1200px;
+  height:250px;
+  background: url(p2.gif);
+  background-size: contain;
+  background-repeat: repeat;
+  margin: 5px auto 30px;
+  border-radius: 15px;
+  left: 50%; 
+  transform: translateX(-50%);
+ }
+
+.separator{
+  position: relative;
+  top:70;
+  background-color:#fff;
+  width:70%;
+}
+ .disp-text{
+  position: relative;
+  top: 50;
+  color:#fff;
+  font-size: 150%;
+ }
+
+ /* ------------images---------- */
+
+ .pop{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(pop.png);
+  background-size: contain;
+  border: none; 
+  cursor: pointer;
+  width:60%;
+  height:60%;
+ }
+
+ .lime{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(lem\(1\).png);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  border: none; 
+  cursor: pointer;
+  width:70%;
+  height:70%;
+ }
+
+ .burg{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(burg.png);
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center; 
+  border: none; 
+  cursor: pointer;
+  width:70%;
+  height:70%;
+ }
+ .pc{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(pancake.png);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  border: none; 
+  cursor: pointer;
+  width:70%;
+  height:70%;
+ }
+/* --------------------------WEAPONS-------------------------- */
+ .g1{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(g1.png);
+  background-size: contain; 
+  box-shadow: none;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  border: none; 
+  cursor: pointer;
+  width:70%;
+  height:70%;
+ }
+ .g-2{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(g2.png);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  border: none; 
+  cursor: pointer;
+  width:80%;
+  height:70%;
+ }
+
+ .g3{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(g3.png);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  border: none; 
+  cursor: pointer;
+  width:70%;
+  height:70%;
+ }
+
+ .g4{
+  position: absolute;
+  top: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  background:url(g4.png);
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  border: none; 
+  cursor: pointer;
+  width:70%;
+  height:70%;
+ }
